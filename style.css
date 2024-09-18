@@ -1,0 +1,1006 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  overflow: scroll;
+}
+
+.container1 {
+  width: 100%;
+  height: 12vh;
+  background-color: black;
+}
+.container1 > .header1 {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  padding: 15px;
+  /* background-color: aqua; */
+}
+.header1 > img {
+  height: 100%;
+}
+.container2 {
+  cursor: pointer;
+  width: 100%;
+  height: 5vh;
+  background-color: #e64141ec;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  display: inline-flex;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(50%);
+  backdrop-filter: blur(50%);
+}
+.container2 > .header2 {
+  width: 70%;
+  height: 100%;
+  /* background-color: blue; */
+  display: inline-flex;
+
+  align-items: center;
+}
+.header2 > ul li {
+  display: inline-flex;
+  font-family: "Koulen";
+  font-size: 1.5rem;
+  padding: 0 15px;
+  color: white;
+  opacity: 0.7;
+  transition: all 0.4s ease-in-out;
+}
+.header2 > ul li:hover {
+  /* width: 100%;
+   height: 100%; */
+  background-color: #f0f8ff;
+  opacity: 1;
+  border-radius: 20px;
+  border-bottom: 2px solid black;
+  transform: translateY(10px);
+}
+.container3 {
+  width: 70%;
+  height: 65vh;
+  margin: 15px auto;
+  cursor: pointer;
+}
+.container3 > .slide-box1 {
+  width: 69%;
+  height: 100%;
+  float: left;
+}
+.container3 > .slide-box1 > .slide-box1-row1 {
+  width: 65%;
+  height: 50%;
+  float: left;
+  background-image: url("./img/img1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container3 > .slide-box1 > .slide-box1-row1 > .header-slide {
+  width: 100%;
+  height: 15%;
+  padding: 5px;
+}
+
+.container3 > .slide-box1 > .slide-box1-row1 > .header-slide > h3 {
+  font-family: "Kantumruy Pro";
+  color: white;
+  width: 15%;
+  height: 100%;
+  background-color: blue;
+  text-align: start;
+  padding: 5px;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.container3 > .slide-box1 > .slide-box1-row1 > .section {
+  width: 100%;
+  height: 70%;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.container3 > .slide-box1 > .slide-box1-row1 > .section > .title1 > h4 {
+  color: white;
+  font-family: "Koulen";
+  text-align: center;
+  margin: auto;
+  width: 95%;
+  overflow: hidden;
+  transform: translateY(155px);
+  transition: all 0.5s ease-out;
+}
+
+.container3 > .slide-box1 > .slide-box1-row1 > .section > .title2 > p {
+  color: white;
+  font-family: "Kantumruy Pro";
+  text-align: center;
+  margin: auto;
+  width: 95%;
+  overflow: hidden;
+  transform: translateY(170px);
+  transition: all 0.5s ease-out;
+}
+.container3 > .slide-box1 > .slide-box1-row1 > .footer-date {
+  width: 100%;
+  height: 15%;
+  padding-left: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.container3 > .slide-box1 > .slide-box1-row1 > .footer-date > p {
+  color: white;
+  font-family: "Kantumruy Pro";
+}
+
+.slide-box1 > .slide-box1-row1:hover > .section > .title1 > h4 {
+  transform: translateY(80px);
+  color: #e64141;
+}
+.slide-box1 > .slide-box1-row1:hover > .section > .title2 > p {
+  transform: translateY(90px);
+}
+
+.container3 > .slide-box1 > .slide-box1-row2 {
+  width: 35%;
+  height: 50%;
+  float: left;
+  background-image: url("./img/img2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container3 > .slide-box1 > .slide-box1-row2 > .header-slide {
+  width: 100%;
+  height: 15%;
+  padding: 5px;
+}
+.container3 > .slide-box1 > .slide-box1-row2 > .header-slide > h3 {
+  /* margin: 10px 0; */
+  font-family: "Kantumruy Pro";
+  color: white;
+  width: 45%;
+  height: 100%;
+  background-color: blue;
+  text-align: start;
+  padding: 8px 0 0 8px;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.container3 > .slide-box1 > .slide-box1-row2 > .section {
+  width: 100%;
+  height: 70%;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.container3 > .slide-box1 > .slide-box1-row2 > .section > .title1 > h4 {
+  color: white;
+  font-family: "Koulen";
+  text-align: center;
+  margin: auto;
+  width: 95%;
+  overflow: hidden;
+  transform: translateY(130px);
+  transition: all 0.5s ease-out;
+}
+
+.container3 > .slide-box1 > .slide-box1-row2 > .section > .title2 > p {
+  color: white;
+  font-family: "Kantumruy Pro";
+  text-align: center;
+  margin: auto;
+  width: 95%;
+  overflow: hidden;
+  transform: translateY(160px);
+  transition: all 0.5s ease-out;
+}
+.container3 > .slide-box1 > .slide-box1-row2 > .footer-date {
+  width: 100%;
+  height: 15%;
+  padding-left: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.container3 > .slide-box1 > .slide-box1-row2 > .footer-date > p {
+  color: white;
+  font-family: "Kantumruy Pro";
+}
+
+.slide-box1 > .slide-box1-row2:hover > .section > .title1 > h4 {
+  transform: translateY(65px);
+  color: #e64141;
+}
+.slide-box1 > .slide-box1-row2:hover > .section > .title2 > p {
+  transform: translateY(70px);
+}
+
+.container3 > .slide-box1 > .slide-box1-row3 {
+  width: 65%;
+  height: 50%;
+  float: left;
+  background-image: url("./img/img3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container3 > .slide-box1 > .slide-box1-row3 > .header-slide {
+  width: 100%;
+  height: 15%;
+  padding: 5px;
+}
+.slide-box1 > .slide-box1-row3 > .header-slide > h3 {
+  font-family: "Kantumruy Pro";
+  color: white;
+  width: 15%;
+  height: 100%;
+  background-color: blue;
+  text-align: start;
+  padding: 8px 0 0 8px;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.container3 > .slide-box1 > .slide-box1-row3 > .section {
+  width: 100%;
+  height: 70%;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.container3 > .slide-box1 > .slide-box1-row3 > .section > .title1 > h4 {
+  color: white;
+  font-family: "Koulen";
+  text-align: center;
+  margin: auto;
+  width: 95%;
+  overflow: hidden;
+  transform: translateY(155px);
+  transition: all 0.5s ease-out;
+}
+
+.container3 > .slide-box1 > .slide-box1-row3 > .section > .title2 > p {
+  color: white;
+  font-family: "Kantumruy Pro";
+  text-align: center;
+  margin: auto;
+  width: 95%;
+  overflow: hidden;
+  transform: translateY(170px);
+  transition: all 0.5s ease-out;
+}
+.container3 > .slide-box1 > .slide-box1-row3 > .footer-date {
+  width: 100%;
+  height: 15%;
+  padding-left: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.container3 > .slide-box1 > .slide-box1-row3 > .footer-date > p {
+  color: white;
+  font-family: "Kantumruy Pro";
+}
+.slide-box1 > .slide-box1-row3:hover > .section > .title1 > h4 {
+  transform: translateY(80px);
+  color: #e64141;
+}
+.slide-box1 > .slide-box1-row3:hover > .section > .title2 > p {
+  transform: translateY(90px);
+}
+
+.container3 > .slide-box1 > .slide-box1-row4 > .header-slide {
+  width: 100%;
+  height: 15%;
+  padding: 5px;
+}
+.slide-box1 > .slide-box1-row4 > .header-slide > h3 {
+  margin: 10px 0;
+  font-family: "Kantumruy Pro";
+  color: white;
+  width: 40%;
+  height: 100%;
+  background-color: blue;
+  text-align: start;
+  padding: 8px 0 0 8px;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+
+.container3 > .slide-box1 > .slide-box1-row4 {
+  width: 35%;
+  height: 50%;
+  float: left;
+  background-image: url("./img/img4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container3 > .slide-box1 > .slide-box1-row4 > .section {
+  width: 100%;
+  height: 70%;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.container3 > .slide-box1 > .slide-box1-row4 > .section > .title1 > h4 {
+  color: white;
+  font-family: "Koulen";
+  text-align: center;
+  margin: auto;
+  width: 95%;
+  overflow: hidden;
+  transform: translateY(130px);
+  transition: all 0.5s ease-out;
+}
+
+.container3 > .slide-box1 > .slide-box1-row4 > .section > .title2 > p {
+  color: white;
+  font-family: "Kantumruy Pro";
+  text-align: center;
+  margin: auto;
+  width: 95%;
+  overflow: hidden;
+  transform: translateY(160px);
+  transition: all 0.5s ease-out;
+}
+.container3 > .slide-box1 > .slide-box1-row4 > .footer-date {
+  width: 100%;
+  height: 15%;
+  padding-left: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.container3 > .slide-box1 > .slide-box1-row4 > .footer-date > p {
+  color: white;
+  font-family: "Kantumruy Pro";
+}
+
+.slide-box1 > .slide-box1-row4:hover > .section > .title1 > h4 {
+  transform: translateY(65px);
+  color: #e64141;
+}
+.slide-box1 > .slide-box1-row4:hover > .section > .title2 > p {
+  transform: translateY(70px);
+}
+
+.container3 > .slide-box2 {
+  width: 30%;
+  height: 100%;
+  margin-left: 1%;
+  float: left;
+}
+.container3 > .slide-box2 > .slide-box2-row1 {
+  width: 100%;
+  height: 49.5%;
+  background-image: url("./img/img5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container3 > .slide-box2 > .slide-box2-row2 {
+  margin-top: 1%;
+  width: 100%;
+  height: 49.5%;
+}
+.container3 > .slide-box2 > .slide-box2-row2 > iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.container4 {
+  margin: 30px auto;
+  width: 70%;
+  height: 70vh;
+}
+.container4 > .name-box {
+  width: 100%;
+  height: 5vh;
+  border-bottom: 2px solid brown;
+}
+.container4 > .name-box > .row-name-box {
+  width: 10%;
+  height: 100%;
+  background-color: brown;
+  text-align: start;
+  padding: 8px 0 8px 20px;
+  color: white;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.container4 > .box-video {
+  width: 100%;
+  height: 65vh;
+  background-color: white;
+  padding: 10px 30px;
+  box-shadow: 1px 1px 20px 0 gray;
+}
+.box-video > .box-video-element1 {
+  width: 100%;
+  height: 45%;
+}
+.box-video > .box-video-element1 > .video {
+  float: left;
+  width: 33%;
+  height: 100%;
+}
+.box-video > .box-video-element1 > .video:nth-child(2) {
+  margin-left: 0.5%;
+}
+.box-video > .box-video-element1 > .video:nth-child(3) {
+  margin-left: 0.5%;
+}
+.box-video-element1 > .video > .img-video {
+  width: 100%;
+  height: 70%;
+  background-color: black;
+}
+.box-video-element1 > .video > .img-video > img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+.box-video-element1 > .video:hover > .img-video > img {
+  transform: scaleY(0.92);
+}
+.box-video-element1 > .video > .title-video {
+  width: 100%;
+  height: 30%;
+  padding: 10px;
+}
+.box-video-element1 > .video > .title-video > p {
+  font-family: "Kantumruy Pro";
+  font-weight: bold;
+}
+
+.box-video > .box-title-element2 {
+  width: 100%;
+  height: 55%;
+}
+.box-video > .box-title-element2 > .box1-title {
+  width: 79%;
+  height: 100%;
+  float: left;
+}
+.box-title-element2 > .box1-title > .box1-title-row {
+  width: 100%;
+  height: 50%;
+  float: left;
+}
+.box-title-element2 > .box1-title > .box1-title-row > .title-row-box1 {
+  width: 23.5%;
+  height: 100%;
+  float: left;
+}
+.box-title-element2
+  > .box1-title
+  > .box1-title-row
+  > .title-row-box1:nth-child(2) {
+  margin-left: 2%;
+}
+.box-title-element2
+  > .box1-title
+  > .box1-title-row
+  > .title-row-box1:nth-child(3) {
+  margin-left: 2%;
+}
+.box-title-element2
+  > .box1-title
+  > .box1-title-row
+  > .title-row-box1:nth-child(4) {
+  margin-left: 2%;
+}
+.box-title-element2
+  > .box1-title
+  > .box1-title-row
+  > .title-row-box1
+  > .vd-box1 {
+  width: 100%;
+  height: 60%;
+  background-color: black;
+  transition: all 0.4s ease-in-out;
+}
+.box-title-element2
+  > .box1-title
+  > .box1-title-row
+  > .title-row-box1
+  > .vd-box1
+  > img {
+  width: 100%;
+  height: 100%;
+}
+.box-title-element2
+  > .box1-title
+  > .box1-title-row
+  > .title-row-box1
+  > .title-box1 {
+  width: 100%;
+  height: 40%;
+}
+.box-title-element2
+  > .box1-title
+  > .box1-title-row
+  > .title-row-box1
+  > .title-box1
+  > p {
+  text-align: center;
+  font-family: "Kantumruy Pro";
+  font-size: 14px;
+}
+.box-title-element2
+  > .box1-title
+  > .box1-title-row
+  > .title-row-box1:hover
+  > .vd-box1
+  > img {
+  transform: scaleY(0.92);
+  cursor: pointer;
+}
+.box-video > .box-title-element2 > .box2-title {
+  margin-left: 1%;
+  width: 20%;
+  height: 100%;
+  float: left;
+  padding: 5px;
+}
+.box-video > .box-title-element2 > .box2-title > img {
+  width: 100%;
+  height: 100%;
+}
+
+.container5 {
+  margin: 30px auto;
+  width: 70%;
+  height: 50vh;
+}
+.container5 > .name-box1 {
+  width: 100%;
+  height: 5vh;
+  border-bottom: 2px solid brown;
+}
+.container5 > .name-box1 > .row-name-box1 {
+  width: 15%;
+  height: 100%;
+  background-color: brown;
+  text-align: start;
+  padding: 8px 0 8px 20px;
+  color: white;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.body-KS {
+  width: 100%;
+  height: 45vh;
+  background-color: white;
+  padding: 20px 30px 0 30px;
+  box-shadow: 1px 5px 20px gray;
+}
+.body-KS > .body-KS-box1 {
+  width: 30%;
+  height: 100%;
+  float: left;
+  cursor: pointer;
+  background-color: fuchsia;
+}
+.body-KS > .body-KS-box2 {
+  width: 68%;
+  height: 100%;
+  float: left;
+  margin-left: 2%;
+  cursor: pointer;
+}
+.body-KS > .body-KS-box1 > .row-body-ks:nth-child(1) {
+  width: 100%;
+  height: 70%;
+}
+.body-KS > .body-KS-box1 > .row-body-ks:nth-child(1) > img {
+  width: 100%;
+  height: 100%;
+}
+.body-KS > .body-KS-box1 > .row-body-ks:nth-child(2) {
+  width: 100%;
+  height: 30%;
+}
+.body-KS > .body-KS-box1 > .row-body-ks:nth-child(2) > p {
+  text-align: start;
+  font-family: "Kantumruy Pro";
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks1 {
+  width: 100%;
+  height: 50%;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks1 > .ks1-box {
+  width: 23.875%;
+  height: 100%;
+  float: left;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks1 > .ks1-box:nth-child(2) {
+  margin-left: 1.5%;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks1 > .ks1-box:nth-child(3) {
+  margin-left: 1.5%;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks1 > .ks1-box:nth-child(4) {
+  margin-left: 1.5%;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks1 > .ks1-box > .img-ks1-box {
+  width: 100%;
+  height: 65%;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks1 > .ks1-box > .img-ks1-box > img {
+  width: 100%;
+  height: 100%;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks1 > .ks1-box > .title-ks1-box {
+  width: 100%;
+  height: 35%;
+  overflow: auto;
+  overflow-y: hidden;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks1 > .ks1-box > .title-ks1-box > p {
+  text-align: start;
+  font-family: "Kantumruy Pro";
+  padding: 2px;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks2 {
+  width: 100%;
+  height: 50%;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks2 > .ks1-box {
+  width: 23.875%;
+  height: 100%;
+  float: left;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks2 > .ks1-box:nth-child(2) {
+  margin-left: 1.5%;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks2 > .ks1-box:nth-child(3) {
+  margin-left: 1.5%;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks2 > .ks1-box:nth-child(4) {
+  margin-left: 1.5%;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks2 > .ks1-box > .img-ks1-box {
+  width: 100%;
+  height: 65%;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks2 > .ks1-box > .img-ks1-box > img {
+  width: 100%;
+  height: 100%;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks2 > .ks1-box > .title-ks1-box {
+  width: 100%;
+  height: 35%;
+  overflow: auto;
+  overflow-y: hidden;
+}
+.body-KS > .body-KS-box2 > .row1-body-ks2 > .ks1-box > .title-ks1-box > p {
+  text-align: start;
+  font-family: "Kantumruy Pro";
+  padding: 2px;
+}
+
+.footer {
+  margin-top: 4%;
+  width: 100%;
+  height: 35vh;
+  background-color: #440505;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.footer > .row-footer {
+  width: 70%;
+  height: 90%;
+}
+.footer > .row-footer > .box-row-footer {
+  font-family: "Kantumruy Pro";
+  float: left;
+  font-size: 1.1rem;
+  color: white;
+}
+.footer > .row-footer > .box-row-footer:nth-child(1) {
+  width: 32%;
+  height: 100%;
+}
+.footer > .row-footer > .box-row-footer:nth-child(1) > .box-logo-footer1 {
+  width: 100%;
+  height: 30%;
+  padding: 5px 0 5px 0;
+}
+.footer > .row-footer > .box-row-footer:nth-child(1) > .box-logo-footer1 > img {
+  width: 40%;
+  height: 100%;
+}
+.footer > .row-footer > .box-row-footer:nth-child(1) > .box-title-footer1 {
+  width: 100%;
+  height: 70%;
+}
+
+.footer > .row-footer > .box-row-footer:nth-child(2) {
+  width: 43%;
+  height: 100%;
+}
+.footer > .row-footer > .box-row-footer:nth-child(2) > .box-header-footer2 {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 1.5rem;
+}
+.footer > .row-footer > .box-row-footer:nth-child(2) > .box-title-footer2 {
+  width: 100%;
+  height: 30%;
+}
+.footer > .row-footer > .box-row-footer:nth-child(2) > .box-icon-footer2 {
+  width: 100%;
+  height: 40%;
+}
+.footer
+  > .row-footer
+  > .box-row-footer:nth-child(2)
+  > .box-icon-footer2
+  > .row-icon-footer2 {
+  width: 100%;
+  height: 6vh;
+}
+.footer
+  > .row-footer
+  > .box-row-footer:nth-child(2)
+  > .box-icon-footer2
+  > .row-icon-footer2
+  > .body-box-icon-footer2 {
+  width: 9.09%;
+  height: 100%;
+  float: left;
+  padding: 4px;
+}
+.footer
+  > .row-footer
+  > .box-row-footer:nth-child(2)
+  > .box-icon-footer2
+  > .row-icon-footer2
+  > .body-box-icon-footer2
+  > img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer > .row-footer > .box-row-footer:nth-child(3) {
+  width: 25%;
+  height: 100%;
+}
+.footer > .row-footer > .box-row-footer:nth-child(3) > .row-header-footer3 {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.footer
+  > .row-footer
+  > .box-row-footer:nth-child(3)
+  > .row-header-footer3
+  > h3 {
+  padding-left: 5%;
+}
+.footer > .row-footer > .box-row-footer:nth-child(3) > .box-icon-footer3 {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4%;
+  padding-left: 5%;
+}
+.footer > .row-footer > .box-row-footer:nth-child(3) > .box-icon-footer3 > i {
+  font-size: 1.7rem;
+}
+.footer > .row-footer > .box-row-footer:nth-child(3) > .box-title-footer3 {
+  width: 100%;
+  height: 45%;
+  padding-left: 5%;
+}
+
+.container6 {
+  margin: 20px auto;
+  width: 70%;
+  overflow: hidden;
+}
+.container6 > .row1 {
+  width: 69.5%;
+  overflow: hidden;
+  float: left;
+  box-shadow: 1px 1px 3px gray;
+}
+.row1 > .header-row1 {
+  width: 100%;
+  height: 5vh;
+  border-bottom: 3px solid deeppink;
+}
+.row1 > .header-row1 > .box-header-row1 {
+  width: 20%;
+  height: 100%;
+  background-color: deeppink;
+  font-family: "Kantumruy Pro";
+  font-size: 1.3rem;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 15px;
+}
+.row1 > .box-body-row1 {
+  width: 100%;
+  overflow: hidden;
+  padding: 15px;
+}
+.row1 > .box-body-row1 > .slide-header {
+  width: 100%;
+  height: 30vh;
+}
+.slide-header-box:hover > .box-img-slide {
+  transform: scaleY(0.95);
+  transition: all 0.4s ease;
+}
+.box-body-row1 > .slide-header > .slide-header-box {
+  width: 48%;
+  height: 100%;
+  float: left;
+  cursor: pointer;
+}
+.box-body-row1 > .slide-header > .slide-header-box:nth-child(2) {
+  margin-left: 4%;
+}
+.slide-header > .slide-header-box > .box-img-slide {
+  width: 100%;
+  height: 65%;
+  background-color: black;
+  background-image: url("./img/img16.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  float: left;
+}
+.slide-header > .slide-header-box > .box-title-slide {
+  float: left;
+  width: 100%;
+  height: 35%;
+  font-family: "Kantumruy Pro";
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: start;
+}
+
+.aside-body {
+  margin-top: 20px;
+  width: 100%;
+  height: 20vh;
+}
+.aside-body > .aside-body1 {
+  width: 30%;
+  height: 100%;
+  float: left;
+  background-image: url("./img/img17.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.aside-body:hover > .aside-body1 {
+  transition: all 0.4s ease;
+  border-radius: 20%;
+  transform: scale(0.95);
+}
+.aside-body > .aside-body2 {
+  width: 70%;
+  height: 100%;
+  /* background-color: blue; */
+  float: left;
+  padding: 10px;
+}
+.aside-body > .aside-body2 > .aside-body2-box:nth-child(1) {
+  width: 100%;
+  overflow: hidden;
+  overflow-y: hidden;
+  float: left;
+  border-bottom: 1px solid gray;
+}
+.aside-body > .aside-body2 > .aside-body2-box:nth-child(1) > p {
+  font-family: "Kantumruy Pro";
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.aside-body > .aside-body2 > .aside-body2-box:nth-child(1) > span {
+  color: #a7a7a7;
+  opacity: 0.7;
+  padding: 10px 0;
+}
+
+.aside-body > .aside-body2 > .aside-body2-box:nth-child(2) {
+  width: 100%;
+  overflow: hidden;
+  overflow-y: hidden;
+  float: left;
+}
+.aside-body > .aside-body2 > .aside-body2-box:nth-child(2) > p {
+  text-align: start;
+  font-family: "Kantumruy Pro";
+}
+
+.container6 > .row2 {
+  margin-left: 1%;
+  width: 29.5%;
+  overflow: hidden;
+  overflow-y: hidden;
+  float: left;
+}
+.row2 > .row2-box1 {
+  width: 100%;
+  height: 80vh;
+}
+.row2 > .row2-box1 > .row2-box1-header {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: bold;
+  opacity: 0.7;
+}
+.row2 > .row2-box1 > .row2-box1-border {
+  width: 15%;
+  height: 3px;
+  background-color: #e64141;
+}
+.row2 > .row2-box1 > .row2-box1-body {
+  width: 100%;
+  height: 94%;
+}
+.row2 > .row2-box1 > .row2-box1-body > .row2-box1-body1 {
+  width: 100%;
+  height: 16.66%;
+  padding: 8px;
+}
+.row2
+  > .row2-box1
+  > .row2-box1-body
+  > .row2-box1-body1
+  > .row2-box1-body2:nth-child(1) {
+  width: 20%;
+  height: 50%;
+  float: left;
+  background-image: url('./img/img17.jpg');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.row2
+  > .row2-box1
+  > .row2-box1-body
+  > .row2-box1-body1
+  > .row2-box1-body2:nth-child(2){
+    width: 80%;
+    height: 100%;
+    float: left;
+    padding: 5px;
+  }
+  .row2
+  > .row2-box1
+  > .row2-box1-body
+  > .row2-box1-body1
+  > .row2-box1-body2:nth-child(2) > p{
+    font-family: "Kantumruy Pro";
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
